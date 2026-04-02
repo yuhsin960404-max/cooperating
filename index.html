@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>逢甲美食地圖</title>
+    <title>大學生存指南</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: "Microsoft JhengHei", Arial, sans-serif;
             background-color: #e3f2fd;
@@ -38,87 +36,34 @@
             background-color: #fff;
             flex-wrap: wrap;
         }
-
-        .filter-bar button {
-            padding: 8px 16px;
-            border: 1px solid #ddd;
-            border-radius: 20px;
+        .tip {
             background-color: #fff;
-            cursor: pointer;
-            font-size: 0.9em;
-        }
-
-        .filter-bar button.active {
-            background-color: #1565c0;
-            color: #fff;
-            border-color: #1565c0;
-        }
-
-        .restaurant-list {
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-
-        .restaurant-card {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            border-left: 4px solid #1565c0;
-        }
-
-        .restaurant-card h2 {
-            font-size: 1.2em;
-            color: #1565c0;
-        }
-
-        .restaurant-card .tag {
-            display: inline-block;
-            background-color: #e3f2fd;
-            color: #1565c0;
-            padding: 2px 10px;
             border-radius: 12px;
-            font-size: 0.8em;
-            margin: 8px 4px 8px 0;
-        }
-
-        .restaurant-card .details {
-            color: #666;
-            font-size: 0.9em;
-            line-height: 1.6;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
 
         .restaurant-card .price {
             font-weight: bold;
             color: #c62828;
         }
-
-        .restaurant-card .rating {
-            color: #fbc02d;
+        .tip p {
+            margin: 0;
+            color: #555;
+            line-height: 1.6;
         }
-
-        .notice {
-            max-width: 700px;
-            margin: 10px auto;
-            padding: 12px 15px;
-            background-color: #fff9c4;
-            border-radius: 8px;
+        .footer {
             text-align: center;
-            font-size: 0.9em;
-            color: #f57f17;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
             color: #aaa;
+            margin-top: 30px;
             font-size: 0.85em;
         }
     </style>
 </head>
 <body>
+    <h1>🎓 大學生存指南</h1>
+    <p style="text-align:center; color:#888;">每個大學生都該知道的事</p>
 
     <header>
         <h1>逢甲美食地圖</h1>
@@ -205,9 +150,13 @@
 
     </div>
 
-    <footer>
-        <p>逢甲美食地圖 &copy; 2025 — 由進階程式設計課程製作</p>
-    </footer>
+    <div class="tip">
+        <h3>📖 期末生存術</h3>
+        <p>圖書館 3 樓的靠窗位最搶手，期末週請提早 30 分鐘卡位。</p>
+    </div>
 
+    <div class="footer">
+        <p>大學生存指南 v1.0 — 祝你順利畢業 🎉</p>
+    </div>
 </body>
 </html>
