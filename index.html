@@ -9,15 +9,15 @@
 
         body {
             font-family: "Microsoft JhengHei", Arial, sans-serif;
-            background-color: #fff8e1;
+            background-color: #e3f2fd;
             color: #333;
         }
 
         header {
-            background-color: #ff6f00;
+            background-color: #1565c0;
             padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #e65100;
+            border-bottom: 2px solid #0d47a1;
         }
 
         header h1 {
@@ -26,7 +26,7 @@
         }
 
         header p {
-            color: #fff3e0;
+            color: #bbdefb;
             margin-top: 5px;
         }
 
@@ -49,9 +49,9 @@
         }
 
         .filter-bar button.active {
-            background-color: #ff6f00;
+            background-color: #1565c0;
             color: #fff;
-            border-color: #ff6f00;
+            border-color: #1565c0;
         }
 
         .restaurant-list {
@@ -65,18 +65,19 @@
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 15px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            border-left: 4px solid #1565c0;
         }
 
         .restaurant-card h2 {
             font-size: 1.2em;
-            color: #333;
+            color: #1565c0;
         }
 
         .restaurant-card .tag {
             display: inline-block;
-            background-color: #fff3e0;
-            color: #e65100;
+            background-color: #e3f2fd;
+            color: #1565c0;
             padding: 2px 10px;
             border-radius: 12px;
             font-size: 0.8em;
@@ -91,11 +92,22 @@
 
         .restaurant-card .price {
             font-weight: bold;
-            color: #e65100;
+            color: #c62828;
         }
 
         .restaurant-card .rating {
             color: #fbc02d;
+        }
+
+        .notice {
+            max-width: 700px;
+            margin: 10px auto;
+            padding: 12px 15px;
+            background-color: #fff9c4;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #f57f17;
         }
 
         footer {
@@ -109,17 +121,21 @@
 <body>
 
     <header>
-        <h1>逢甲美食地圖 — 夜市特輯</h1>
-        <p>逢甲夜市周邊必吃推薦</p>
+        <h1>逢甲美食地圖</h1>
+        <p>精選校園周邊高評價店家</p>
     </header>
+
+    <div class="notice">
+        營業時間僅供參考，實際以店家公告為準
+    </div>
 
     <div class="filter-bar">
         <button class="active">全部</button>
         <button>台式</button>
         <button>日式</button>
-        <button>韓式</button>
         <button>飲料</button>
         <button>甜點</button>
+        <button>素食</button>
     </div>
 
     <div class="restaurant-list">
@@ -128,37 +144,25 @@
             <h2>阿明滷肉飯</h2>
             <span class="tag">台式</span>
             <span class="tag">平價</span>
-            <span class="tag">學生最愛</span>
             <div class="details">
                 <p>地址：逢甲路 12 號</p>
-                <p>營業時間：11:00 - 23:00</p>
-                <p class="price">均消：$55</p>
+                <p>營業時間：10:30 - 20:30</p>
+                <p class="price">均消：$60</p>
                 <p class="rating">★★★★☆ 4.2 分</p>
-                <p>推薦：滷肉飯加蛋、味噌湯、滷豆腐</p>
+                <p>推薦：招牌滷肉飯、豬腳飯、味噌湯</p>
             </div>
         </div>
 
         <div class="restaurant-card">
             <h2>櫻花壽司</h2>
             <span class="tag">日式</span>
+            <span class="tag">高評價</span>
             <div class="details">
                 <p>地址：文華路 88 號</p>
                 <p>營業時間：11:30 - 14:00 / 17:00 - 21:00</p>
-                <p class="price">均消：$150</p>
-                <p class="rating">★★★★★ 4.7 分</p>
-                <p>推薦：鮭魚握壽司、茶碗蒸、炙燒鰻魚</p>
-            </div>
-        </div>
-
-        <div class="restaurant-card">
-            <h2>首爾歐巴</h2>
-            <span class="tag">韓式</span>
-            <div class="details">
-                <p>地址：福星路 55 號</p>
-                <p>營業時間：11:00 - 21:30</p>
-                <p class="price">均消：$120</p>
-                <p class="rating">★★★★☆ 4.1 分</p>
-                <p>推薦：起司炸雞、辣炒年糕、石鍋拌飯</p>
+                <p class="price">均消：$160</p>
+                <p class="rating">★★★★★ 4.8 分</p>
+                <p>推薦：極上鮭魚、海膽軍艦、炙燒和牛</p>
             </div>
         </div>
 
@@ -167,10 +171,10 @@
             <span class="tag">飲料</span>
             <div class="details">
                 <p>地址：福星路 33 號</p>
-                <p>營業時間：10:00 - 23:30</p>
-                <p class="price">均消：$50</p>
+                <p>營業時間：09:00 - 22:00</p>
+                <p class="price">均消：$45</p>
                 <p class="rating">★★★★☆ 4.0 分</p>
-                <p>推薦：黑糖鮮奶、百香果綠茶、芋頭牛奶</p>
+                <p>推薦：鮮奶茶、冬瓜檸檬、芋頭牛奶</p>
             </div>
         </div>
 
@@ -179,10 +183,23 @@
             <span class="tag">甜點</span>
             <div class="details">
                 <p>地址：西安街 7 號</p>
-                <p>營業時間：13:00 - 21:00</p>
-                <p class="price">均消：$95</p>
-                <p class="rating">★★★★☆ 4.3 分</p>
-                <p>推薦：草莓千層、焦糖布丁、抹茶戚風</p>
+                <p>營業時間：12:00 - 19:00（週一公休）</p>
+                <p class="price">均消：$100</p>
+                <p class="rating">★★★★★ 4.5 分</p>
+                <p>推薦：伯爵千層、焦糖烤布蕾、生巧克力塔</p>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <h2>綠光蔬食</h2>
+            <span class="tag">素食</span>
+            <span class="tag">健康</span>
+            <div class="details">
+                <p>地址：西屯路 120 號</p>
+                <p>營業時間：11:00 - 20:00</p>
+                <p class="price">均消：$85</p>
+                <p class="rating">★★★★☆ 4.1 分</p>
+                <p>推薦：蔬菜咖哩、豆腐排飯、五穀沙拉</p>
             </div>
         </div>
 
